@@ -1,0 +1,3 @@
+requests
+pandas
+# Add other dependencies here
