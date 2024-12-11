@@ -4,6 +4,8 @@ param (
 	[Parameter(Mandatory=$false, HelpMessage="Build the runner image")][switch]$BuildContainer = $false
 )
 
+Clear-Host
+
 If ($BuildContainer) {
 	docker build -t python-script-runner .
 	Write-Host "Image built"
